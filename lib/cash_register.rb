@@ -69,6 +69,7 @@ class CashRegister
   def items
     @cart.each do |attr|
       attr.select {|key, name| key.has_key?(@title)} 
+    end
     
 
 end
