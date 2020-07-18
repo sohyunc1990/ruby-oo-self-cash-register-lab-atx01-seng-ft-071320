@@ -67,8 +67,8 @@ class CashRegister
   end
   def items
     @cart.each do |attr|
-      binding.pry
       attr.select {|key, name| key.has_key?(@title)} 
+      binding.pry
     end
     end
     
