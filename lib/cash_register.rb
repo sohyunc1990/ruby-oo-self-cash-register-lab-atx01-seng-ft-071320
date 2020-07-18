@@ -50,7 +50,7 @@ class CashRegister
     @discount = discount
     @cart = []
   end
-  def add_item(title, price, quantity = 0)
+  def add_item(title, price, quantity = 1)
     @title = title
     @price = price
     @quantity = quantity
