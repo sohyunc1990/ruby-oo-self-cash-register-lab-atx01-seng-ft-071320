@@ -55,7 +55,7 @@ class CashRegister
     @price = price
     @quantity = quantity
     @cart << title
-    until quantity == 0 do
+    until quantity == 1 do
     @cart << title
     quantity -= 1
     end
