@@ -55,6 +55,7 @@ class CashRegister
     @price = price
     @quantity = quantity
     @cart << self
+    binding.pry
     @total += (price * quantity)
   end
   def apply_discount
@@ -64,6 +65,8 @@ class CashRegister
   else 
     "There is no discount to apply."
   end
+  def items
+    
   end
     
 
