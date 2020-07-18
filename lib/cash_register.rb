@@ -69,7 +69,6 @@ class CashRegister
     @cart.select {|key|}
     binding.pry
     end
-    end
     
 
 end
