@@ -66,7 +66,7 @@ class CashRegister
   end
   end
   def items
-    @cart.@title
+    @cart.has_key?(title)
     binding.pry
     end
     end
