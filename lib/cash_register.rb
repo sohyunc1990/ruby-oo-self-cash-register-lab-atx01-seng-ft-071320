@@ -55,7 +55,7 @@ class CashRegister
     @price = price
     @quantity = quantity
     @cart << self
-    @total += price * quantity
+    @total += (price * quantity)
   end
 
 end
