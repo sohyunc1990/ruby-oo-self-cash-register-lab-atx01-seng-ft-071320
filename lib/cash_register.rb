@@ -66,7 +66,7 @@ class CashRegister
   end
   end
   def items
-    @cart.select
+    @cart.select {}
     binding.pry
     end
     end
