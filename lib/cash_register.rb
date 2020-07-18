@@ -1,7 +1,6 @@
 require 'pry'
 class CashRegister
  attr_accessor :discount, :total, :title, :price, :quantity, :item, :list_of_transaction
-    
   
   def initialize(discount = 0)
     @discount = discount
@@ -38,9 +37,6 @@ class CashRegister
     @cart
   end
   def void_last_transaction
-    until @list_of_transaction == [] do
-    @total -= @list_of_transaction[0]
-    @total  
-  end
+    @total -= @list_of_transaction.pop
   end
 end
