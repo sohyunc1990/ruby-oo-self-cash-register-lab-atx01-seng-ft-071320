@@ -68,7 +68,7 @@ class CashRegister
   end
   def items
     @cart.each do |attr|
-      attr.select
+      attr.select {|title| 
     
 
 end
