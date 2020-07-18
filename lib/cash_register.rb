@@ -56,7 +56,6 @@ class CashRegister
     @price = price
     @quantity = quantity
     @cart << self
-    binding.pry
   end
 
 end
