@@ -66,7 +66,8 @@ class CashRegister
   end
   end
   def items
-    @cart.select {|key|}
+    @cart.each do |item|
+      item
     binding.pry
     end
     
