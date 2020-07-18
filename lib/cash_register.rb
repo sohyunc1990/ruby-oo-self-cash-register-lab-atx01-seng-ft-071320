@@ -54,7 +54,7 @@ class CashRegister
     @title = title
     @price = price
     @quantity = quantity
-    @cart << self
+    @cart << item
     @total += (price * quantity)
   end
   def apply_discount
@@ -66,9 +66,7 @@ class CashRegister
   end
   end
   def items
-    @cart.each do |item|
-      item.select.has_key?(title)
-    binding.pry
+    @cart
     end
   end
     
