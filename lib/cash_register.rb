@@ -50,11 +50,15 @@ class CashRegister
     @discount = discount
     @cart = []
   end
-  def add_item(title, price, quantity = 1)
+  def add_item(title, price, quantity = 0)
     @title = title
     @price = price
     @quantity = quantity
+    quantity += 1
+    until quantity == 0 do
     @cart << title
+    quantity -= 1
+    end
     @total += (price * quantity)
   end
   def apply_discount
