@@ -40,3 +40,4 @@ require 'pry'
 #     @total -= @list_of_transaction.pop
 #   end
 # end
+
