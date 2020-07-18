@@ -57,5 +57,8 @@ class CashRegister
     @cart << self
     @total += (price * quantity)
   end
+  def apply_discount
+    @total -= (@total * discount)/100.0
+    
 
 end
