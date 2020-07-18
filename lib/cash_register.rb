@@ -56,7 +56,6 @@ class CashRegister
     @quantity = quantity
     @cart << self
     @total += (price * quantity)
-    binding.pry
   end
   def apply_discount
     if discount > 0
@@ -70,7 +69,7 @@ class CashRegister
     @cart.each do |attr|
       binding.pry
       attr.select {|key, name| key.has_key?(@title)} 
-
+    end
     end
     
 
