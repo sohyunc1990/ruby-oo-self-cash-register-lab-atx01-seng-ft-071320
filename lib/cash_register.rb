@@ -41,3 +41,8 @@ require 'pry'
 #   end
 # end
 
+class CashRegister
+
+
+
+end
