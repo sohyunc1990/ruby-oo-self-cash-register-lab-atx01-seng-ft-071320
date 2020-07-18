@@ -66,6 +66,9 @@ class CashRegister
     "There is no discount to apply."
   end
   end
+  def items
+    @cart.each do |attr|
+      attr
     
 
 end
